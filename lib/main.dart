@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:temp/page_10.dart';
 
+import 'calander_page _12.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -11,7 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      routes: {'/': (context) => EmployeeStatisticsScreen()},
+      routes: {
+        // '/': (context) => EmployeeStatisticsScreen(),
+        '/': (context) => AttendanceLogScreen(),
+      },
     );
   }
 }
